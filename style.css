@@ -19,15 +19,17 @@
     transition: all 0.5s linear;
     font-family: 'Gabarito', sans-serif;
     font-family: 'Ubuntu', sans-serif;
+    
 }
 .main{
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgb(4 3 3/60%),
     rgb(0 0 0/33%)),url(images/one.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    padding-top: 100px;
 }
 .navbar{
     display: flex;
@@ -88,7 +90,7 @@
 }
 .para{
     color: #000000;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 }
 .heading{
     color: #C19A6B;
