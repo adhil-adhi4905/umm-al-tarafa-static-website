@@ -44,6 +44,12 @@
     position: sticky;
     z-index: 1;
 }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
 .navbar li{
     display: inline;
     padding: 0 15px;
