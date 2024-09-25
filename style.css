@@ -150,13 +150,14 @@
 /* ________-types_______ */
 .box{
     flex-basis: 17%;
-    margin: 0 30px;
+    margin: 1PX 30px;
     box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+    
 }
 .box h2{
     background-color: #3d1f0a;
     color: white;
-    padding: 12px 0px;
+    padding: 12px px;
 }
 /* ___--about________ */
 .about{
