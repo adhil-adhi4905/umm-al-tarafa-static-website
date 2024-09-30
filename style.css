@@ -30,7 +30,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 100px;
+    padding-top: 0px;
 }
 .navbar{
     display: flex;
@@ -43,9 +43,10 @@
     top: 0%;
     position: sticky;
     z-index: 1;
+
 }
 .navbar li{
-    display: inline;
+    display: inline-flex;
     padding: 0 15px;
 }
 .navbar li a{
@@ -96,6 +97,7 @@
     letter-spacing: 3px;
 }
 .heading{
+    padding-top: 30px;
     color: #C19A6B;
     font-size: 39px;
     text-align: center;
@@ -315,7 +317,7 @@
     }
 
 }
-@media only screen and (max-width:500px){
+@media only screen and (max-width:767px){
 .main-heading{
     width: 80%;
 }
@@ -323,7 +325,7 @@
     font-size: 60px;
 }
 .comments{
-    width: 80%;
+    width: 90%;
     margin: 10% auto;
 }
 .mid-para{
