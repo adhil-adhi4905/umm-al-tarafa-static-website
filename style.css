@@ -12,6 +12,7 @@
 
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Gabarito&family=Inclusive+Sans&family=Montserrat&family=Poppins&family=Roboto&family=Space+Grotesk&family=Ubuntu&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -20,17 +21,16 @@
     transition: all 0.5s linear;
     font-family: 'Gabarito', sans-serif;
     font-family: 'Ubuntu', sans-serif;
-    
+   
 }
 .main{
     height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgb(4 3 3/60%),
-    rgb(0 0 0/33%)),url(images/one.webp);
+    rgb(0 0 0/33%)),url(images/BAR-NUTELLA-320x320.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 0px;
 }
 .navbar{
     display: flex;
@@ -39,25 +39,24 @@
     width: 100%;
     height: 100px;
     padding: 0 5%;
-    background-color:#000000;
     top: 0%;
     position: sticky;
     z-index: 1;
-
+    background-color: #000000;
+    
 }
 .navbar li{
-    display: inline-flex;
+    display: inline;
     padding: 0 15px;
 }
 .navbar li a{
-    text-decoration:none;
+    text-decoration: none;
     color: whitesmoke;
     font-size: 23px;
     padding: 4px;
 }
 .navbar li a:hover{
     color: #C19A6B;
-    
 }
 .burger{
     display: none;
@@ -75,8 +74,6 @@
     border: none;
     font-size: 18px;
     cursor: pointer;
-    text-align: end;
-    
 }
 .btn:hover{
     background-color: #9c8c7a;
@@ -93,30 +90,23 @@
     height: 60vh;
 }
 .para{
-    color: #000000;
-    letter-spacing: 3px;
+    color: #9c8c7a;
+    letter-spacing: 2px;
 }
 .heading{
-    padding-top: 30px;
-    color: #C19A6B;
-    font-size: 39px;
-    text-align: center;
-    
+    color: #ff6b00;
+    font-size: 75px;
+    font-family: 'Courgette', cursive;
 }
 .mid-para{
-    font-size: 17px;
-    color: #000000;
+    font-size: 11px;
+    color: #9c8c7a;
     padding: 2% 0;
 }
 .btn1{
     border-radius: 20px;
     letter-spacing: 1px;
     margin-top: 2%;
-    
-}
-.order{
-    text-decoration: none;
-    color: #000000;
 }
 /* ________sec_________ */
 .sec{
@@ -152,14 +142,13 @@
 /* ________-types_______ */
 .box{
     flex-basis: 17%;
-    margin: 1PX 30px;
+    margin: 0 30px;
     box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
-    
 }
 .box h2{
     background-color: #3d1f0a;
     color: white;
-    padding: 12px px;
+    padding: 12px 0px;
 }
 /* ___--about________ */
 .about{
@@ -169,13 +158,13 @@
     position: relative;
 }
 .about-box{
-    position: absolute;
-    top: 56%;
-    width: 50%;
-    left: 25%;
-    padding: 12px;
-    background-color: whitesmoke;
-}
+        position: absolute;
+        top: 56%;
+        width: 50%;
+        left: 25%;
+        padding: 12px;
+        background-color: whitesmoke;
+    }
 /* _______comments_______ */
 .comments{
     width: 100%;
@@ -267,6 +256,9 @@
         justify-content: center;
         transition: all 1s ease-in-out;
         background-color: black;
+        position: sticky;
+        z-index: 1;
+        
     }
     .navbar li a{
         padding: 18% 0;
@@ -317,7 +309,7 @@
     }
 
 }
-@media only screen and (max-width:767px){
+@media only screen and (max-width:500px){
 .main-heading{
     width: 80%;
 }
@@ -325,7 +317,7 @@
     font-size: 60px;
 }
 .comments{
-    width: 90%;
+    width: 80%;
     margin: 10% auto;
 }
 .mid-para{
