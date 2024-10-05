@@ -1,16 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Gabarito&family=Inclusive+Sans&family=Montserrat&family=Poppins&family=Roboto&family=Space+Grotesk&family=Ubuntu&display=swap');
-.header-commit{
-    display: block;
-    font-weight: 400;
-    padding: 10px 30px;
-    margin: 0;
-    color: #000000;
-    text-align: center;
-    background-color: #f6c566;
-    
-   
-
-}
 
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Gabarito&family=Inclusive+Sans&family=Montserrat&family=Poppins&family=Roboto&family=Space+Grotesk&family=Ubuntu&display=swap');
 *{
@@ -27,7 +15,7 @@
     height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(202, 183, 183, 0.6),
-    rgb(0 0 0/33%)),url(images/BAR-NUTELLA-320x320.jpg);
+    rgb(0 0 0/33%)),url(images/ummaltarafa.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -40,10 +28,15 @@
     height: 100px;
     padding: 0 5%;
     top: 0%;
-    position: sticky;
+    position: fixed;
     z-index: 1;
     background-color: #000000;
     
+}
+.logo{
+    margin-right: 25%;
+    color: rgb(236,115,72);
+    font-size: 30px;
 }
 .navbar li{
     display: inline;
@@ -53,7 +46,7 @@
     text-decoration: none;
     color: whitesmoke;
     font-size: 23px;
-    padding: 4px;
+
 }
 .navbar li a:hover{
     color: #C19A6B;
@@ -242,34 +235,44 @@
         left: 18%;
     }
 }
-@media only screen and (max-width:820px){
+@media only screen and (max-width:768px){
     .burger{
         display: block;
     }
     .navbar{
-        position: absolute;
         height: 80vh;
         width: 200px;
-        top: 0;
+        top: 0px;
         flex-direction: column;
         right: 0;
-        text-align: left;
+        text-align: center;
         justify-content: center;
         transition: all 1s ease-in-out;
-        background-color: black;
+        background-color: rgb(8, 236, 61);
         position: sticky;
-        z-index: 1;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        height: auto;
         
     }
+    .logo{
+        float: none;
+        width: auto;
+        justify-content: center;
+        color: #000000;
+    }
     .navbar li a{
-        padding: 18% 0;
+        padding: 3% 2;
         display: block;
+        color:blue;
     }
     .navbar .btn{
         padding: 15px 24px;
     }
     .h-class{
-        height: 100vh;
+        height: 10vh;
         opacity: 0;
     }
     .v-class{
@@ -311,9 +314,7 @@
 
 }
 @media only screen and (max-width:500px){
-.main-heading{
-    width: 80%;
-}
+
 .heading{
     font-size: 60px;
 }
